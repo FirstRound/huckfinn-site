@@ -55,7 +55,7 @@ $(document).ready(function () {
     
     function super_menu(wrapp) {
         
-        if ($(window).scrollTop() > 500) {
+        if ($(window).scrollTop() > 625) {
             wrapp.addClass("showed");
         }
         else {
