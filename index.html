@@ -509,27 +509,7 @@
                   
         </div>
     </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiDtu1T1JT4F3whkOla5FxBQ603ucfZNY&callback=initMap&language=en"
-  type="text/javascript"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        $('.send_form button[type=submit]').click(function(e) {
-        	e.preventDefault();
-        	$.post({
-        		url: 'mail.php',
-        		data: $('.send_form').serialize(),
-        		success: function(response) {
-        			$('#thanks').removeClass('hidden');
-        			$('.send_form input').val('');
-        			$('.send_form textarea').val('');
-        		}
-        	});
-        });
-    </script>
 </body>
 
 </html>
