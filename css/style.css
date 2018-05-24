@@ -32,6 +32,11 @@ body {
   width: 110px;
   left: 20px; }
 
+.map_text {
+  color: #F5B818;
+  font: 16px NORTHWEST;
+  padding-right: 15px; }
+
 .main-m-w {
   max-width: 1060px;
   margin: 0 auto;
