@@ -75,6 +75,18 @@
   #line_up_modal .text {
     height: 220px; } }
 @media (max-width: 767px) {
+  .tickets_top_link {
+    background: #F5B818;
+    color: #000;
+    font: 20px NORTHWEST;
+    text-align: center;
+    display: block;
+    padding-bottom: 6px;
+    position: fixed;
+    z-index: 50px;
+    width: 100%;
+    top: 0; }
+
   .flex-insta-head img:first-child {
     display: none; }
 
@@ -94,9 +106,7 @@
     margin-left: 0; }
 
   .main-m-w .image-cover .right-image {
-    top: 120px;
-    max-width: 182px;
-    right: 0; }
+    display: none; }
 
   .main-m-w .image-cover {
     height: 303px; }
