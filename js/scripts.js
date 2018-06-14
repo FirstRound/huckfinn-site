@@ -11,6 +11,55 @@ $(document).ready(function () {
         }
     });
 
+    function counter() {
+        var end = 1529449200;
+        var now = Math.round(new Date().getTime() / 1000);
+        if (now < end) {
+            var diff = end - now;
+            var days = parseInt(diff/86400);
+            var hours = parseInt((diff - (days * 86400))/3600);
+            var minutes = parseInt((diff % 3600) / 60);
+            var seconds = parseInt(diff % 60);
+
+
+            if(days < 10){
+                $('.main-counter-wr .d').text('0'+days);
+            }
+            else {
+                $('.main-counter-wr .d').text(days);
+            }
+            if(hours < 10){
+                $('.main-counter-wr .h').text('0'+hours);
+            }
+            else{
+                $('.main-counter-wr .h').text(hours);
+            }
+
+            if(minutes < 10){
+               $('.main-counter-wr .m').text('0'+minutes);
+            }
+            else{
+               $('.main-counter-wr .m').text(minutes);
+            }
+            if(seconds < 10){
+               $('.counter-velue .s').text('0'+seconds);
+            }
+            else{
+                $('.counter-velue .s').text(seconds);
+            }
+
+        }
+        else {
+            $('.main-counter-wr .d').text('00');
+            $('.main-counter-wr .h').text('00');
+            $('.main-counter-wr .m').text('00');
+            $('.counter-velue .s').text('00');
+        } 
+
+    }
+    
+    counter();
+    setInterval(counter, 1000);
     
     $('.slider-init').slick({
         dots: true,

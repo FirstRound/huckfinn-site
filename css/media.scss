@@ -29,6 +29,10 @@
     .main-m-w .image-cover .left-image {
         margin-left: 100px;
     }
+
+    .hide_on_tablets {
+        display: none;
+    }
 }
 @media (max-width: 991px) {
     .flex-insta-head img {
@@ -94,6 +98,11 @@
         z-index: 50;
         width: 100%;
         top: 0;
+        &.visible-xs{
+            display: flex!important;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .flex-insta-head img{
@@ -372,5 +381,15 @@
     .huckfinn_container .galary-flex .wrapp-image-white {
         width: 100%;
     }
-    
+    .lvl-1{
+        .main-counter-wr{
+        
+            display: none!important;
+        }
+    }
+    .main-counter-wr{
+        top: 0;
+        color: #000;
+        font-size: 13px;
+    }
 }

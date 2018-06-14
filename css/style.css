@@ -659,4 +659,51 @@ footer {
   display: inline-block;
   padding: 10px 50px 20px; }
 
+.main-counter-wr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: 10px;
+  color: #F5B818;
+  top: -1px; }
+  .main-counter-wr .counter-velue {
+    line-height: 33px;
+    display: block;
+    position: relative;
+    top: 2px;
+    padding: 0 5px; }
+    .main-counter-wr .counter-velue:last-child {
+      padding-right: 0; }
+      .main-counter-wr .counter-velue:last-child .desc {
+        left: calc(50% + 3px); }
+    .main-counter-wr .counter-velue .desc {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      color: #25a9df;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-size: 14px; }
+    .main-counter-wr .counter-velue .d,
+    .main-counter-wr .counter-velue .h,
+    .main-counter-wr .counter-velue .m,
+    .main-counter-wr .counter-velue .s {
+      letter-spacing: 2px; }
+
+.ticket_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 /*# sourceMappingURL=style.css.map */

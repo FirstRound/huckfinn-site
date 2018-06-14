@@ -782,3 +782,50 @@ footer{
     display: inline-block;
     padding: 10px 50px 20px;
 }
+
+.main-counter-wr {
+    display: flex;
+     font-size: 20px;
+     font-family: 'Anton', sans-serif;
+    width: auto;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+    color: #F5B818;
+    top: -1px;
+    .counter-velue {
+        line-height: 33px;
+        
+        
+        display: block;
+        position: relative;
+        top: 2px;
+        padding: 0 5px;
+        &:last-child {
+            padding-right: 0;
+            .desc {
+                left: calc(50% + 3px);
+            }
+        }
+        .desc {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            color: #25a9df;
+            transform: translateX(-50%);
+            font-size: 14px;
+        }
+        .d,
+        .h,
+        .m,
+        .s {
+            letter-spacing: 2px;
+        }
+    }
+}
+.ticket_link{
+    display: flex;
+    align-items: center;
+    
+}

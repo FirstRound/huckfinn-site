@@ -24,7 +24,10 @@
     width: 100px; }
 
   .main-m-w .image-cover .left-image {
-    margin-left: 100px; } }
+    margin-left: 100px; }
+
+  .hide_on_tablets {
+    display: none; } }
 @media (max-width: 991px) {
   .flex-insta-head img {
     max-width: 235px; }
@@ -86,6 +89,16 @@
     z-index: 50;
     width: 100%;
     top: 0; }
+    .tickets_top_link.visible-xs {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
 
   .flex-insta-head img:first-child {
     display: none; }
@@ -349,6 +362,14 @@
     display: block; }
 
   .huckfinn_container .galary-flex .wrapp-image-white {
-    width: 100%; } }
+    width: 100%; }
+
+  .lvl-1 .main-counter-wr {
+    display: none !important; }
+
+  .main-counter-wr {
+    top: 0;
+    color: #000;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=media.css.map */
